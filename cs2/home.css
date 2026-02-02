@@ -1,0 +1,133 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+/* Body */
+body {
+    background: linear-gradient(135deg, #1e1e2f, #3a3a5c);
+    color: white;
+    min-height: 100vh;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+/* Navigation */
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 18px;
+    position: relative;
+    transition: 0.3s;
+}
+
+.nav-links a::after {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background: #ffcc00;
+    left: 0;
+    bottom: -5px;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #ffcc00;
+}
+
+.nav-links a:hover::after {
+    width: 100%;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    margin-top: 120px;
+}
+
+.hero h2 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 20px;
+    margin-bottom: 40px;
+    opacity: 0.8;
+}
+
+/* Quick Navigation Section */
+.quick-nav {
+    margin-top: 80px;
+    text-align: center;
+}
+
+.quick-nav h2 {
+    font-size: 36px;
+    margin-bottom: 25px;
+    color: #ffcc00;
+}
+
+.quick-links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    padding: 0;
+}
+
+.quick-links li a {
+    text-decoration: none;
+    color: white;
+    font-size: 22px;
+    padding: 12px 25px;
+    border: 2px solid #ffcc00;
+    border-radius: 30px;
+    transition: 0.3s;
+}
+
+.quick-links li a:hover {
+    background: #ffcc00;
+    color: #1e1e2f;
+    transform: translateY(-3px);
+}
+
+/* Button */
+.btn {
+    padding: 12px 30px;
+    background: #ffcc00;
+    color: #1e1e2f;
+    text-decoration: none;
+    font-size: 20px;
+    border-radius: 30px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #ffe680;
+}
